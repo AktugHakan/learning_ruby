@@ -17,3 +17,12 @@ print "Enter your surname: "
 surname = gets.chomp
 puts "Hello " + name + " " + surname
 # since chomp is a string method we can use it on strings too
+
+
+# Inputs always comes as stirngs
+print "Num 1: "
+num1 = gets.to_i
+print "Num 2: "
+num2 = gets.to_i
+
+puts "Sumation is " + (num1 + num2).to_s
