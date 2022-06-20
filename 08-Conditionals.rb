@@ -11,7 +11,7 @@ elsif large == small # "elsif"
 else
     puts "Nope"
 end
-
+#NOTE: 0, 0.0 are considered to be true values. false and nil are false values 
 
 # Switch-Case structure
 puts "What to do today?\na - Say hi\nb - Attack\nc - Flee"
