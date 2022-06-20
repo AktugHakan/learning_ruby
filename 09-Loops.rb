@@ -62,4 +62,11 @@ def print_iterable2(iterable)
     end
 end
 print_iterable2(my_list)
-print_iterable2(loop_counter) # non-iterable type will raise error
+#print_iterable2(loop_counter) # non-iterable type will raise error
+
+
+
+# Another weird way to do things certain amount of time
+7.times do |i|
+    puts "Current index: " + i.to_s
+end
