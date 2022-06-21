@@ -29,9 +29,12 @@ newfile.write("ABC")
 newfile.close
 
 
-File.open("Log.txt", "r+") do |samefile|
+File.open("Log.txt", "a") do |samefile|
+    samefile.rewind
     samefile.write("TEST")
 end
+
+
 
 
 =begin
