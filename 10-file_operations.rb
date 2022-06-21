@@ -17,3 +17,28 @@ File.open("people.txt", "r") do |file|
     end
 end
 
+
+# Using files without lambda functions
+newfile = File.open("Log.txt", "w+")
+newfile.write("Hello world!\n")
+newfile.write("Testing")
+newfile.rewind
+newfile.write("ABC")
+
+# This method requires to close the file
+newfile.close
+
+
+File.open("Log.txt", "r+") do |samefile|
+    samefile.write("TEST")
+end
+
+
+=begin
+
+r => read
+r+ or w+ => read/write (w+ deletes and creates a new file, r+ overwrites the content of the file)
+w => write (if exists, deletes the file and makes a new file)
+a => append (pointer from the end of the file)
+
+=end
